@@ -64,7 +64,7 @@ h1{font-size:2.2rem;color:#e6c26a;margin:.2em 0}h2{color:#e6c26a;margin-top:1.6e
 const API="https://basma-reviews-api.mahmoudalkafas84.workers.dev";let stars=0;
 const $=i=>document.getElementById(i);
 function esc(t){const d=document.createElement('div');d.textContent=t;return d.innerHTML}
-async function load(){try{const r=await (await fetch(API+'/reviews')).json();$('summary').textContent=r.count?('★ '+r.average+' / 5 · '+r.count+' تقييم / ratings'):'لسه مفيش تقييمات / No reviews yet';$('list').innerHTML=r.reviews.map(v=>'<div class="rv"><b>'+'★'.repeat(v.stars)+'</b> '+esc(v.name||'زائر / Visitor')+'<br>'+esc(v.comment)+'</div>').join('')}catch(e){$('summary').textContent='التقييمات مش متاحة حاليًا / Reviews are unavailable right now'}}
+async function load(){try{const r=await (await fetch(API+'/reviews')).json();$('summary').textContent=r.count?('\u2066★ '+r.average+' / 5\u2069 · \u2066'+r.count+'\u2069 تقييم / ratings'):'لسه مفيش تقييمات / No reviews yet';$('list').innerHTML=r.reviews.map(v=>'<div class="rv"><b>'+'★'.repeat(v.stars)+'</b> '+esc(v.name||'زائر / Visitor')+'<br>'+esc(v.comment)+'</div>').join('')}catch(e){$('summary').textContent='التقييمات مش متاحة حاليًا / Reviews are unavailable right now'}}
 $('stars').onclick=e=>{const s=e.target.dataset.s;if(!s)return;stars=+s;[...$('stars').children].forEach((b,i)=>b.classList.toggle('on',i<stars))};
 $('rf').onsubmit=async e=>{e.preventDefault();if(!stars){$('msg').textContent='اختار النجوم / Pick stars';return}
 const token=document.querySelector('[name=cf-turnstile-response]')?.value;
