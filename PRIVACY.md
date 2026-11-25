@@ -1,8 +1,8 @@
 # Basma | بصمة: Privacy Policy
 
-Last updated: November 25, 2026
-App: Basma | بصمة (Android package com.mahmoud.basma), version 1.5.3
-Developer: basma-app
+Last updated: November 25, 2026  
+App: Basma | بصمة (Android package com.mahmoud.basma), version 1.5.3  
+Developer: basma-app  
 Contact: open an issue at https://github.com/basma-app/basma/issues (public; do not post personal or sensitive information)
 
 ## English
