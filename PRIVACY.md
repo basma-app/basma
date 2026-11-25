@@ -47,8 +47,6 @@ Contact: open an issue at https://github.com/basma-app/basma/issues (public; do 
 
 ## Ratings and comments on the landing page
 
-This section is about the landing page only. The Android app itself still does not send anything to us.
-
 Visitors can leave stars and a comment on https://basma-app.github.io/basma/ without an account.
 
 What is stored: the number of stars, the comment, the optional name you type, and the time. Reviews are checked by the project owner before they appear, and approved ones are shown publicly with your name if you typed one. Do not write personal details in the comment.
