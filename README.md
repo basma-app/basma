@@ -22,8 +22,8 @@
 
 ### ملاحظات
 - الشعارات بتتعمل من قوالب جاهزة جوّه التطبيق، مش بالذكاء الاصطناعي.
-- كل حاجة بتشتغل على جهازك. مفيش حساب ولا إعلانات ولا بيانات بتتبعت لأي مكان.
-- تقدر تحفظ لحد 12 تصميم على جهازك.
+- التصميم والحفظ بيتم على جهازك. مفيش حساب ولا إعلانات.
+- التصاميم المحفوظة بتتخزن على جهازك (لحد 12 تصميم). ممكن النسخ الاحتياطي بتاع أندرويد يحفظ بيانات التطبيق مع نسختك الاحتياطية، ولو مش عايز كده اقفله من إعدادات الهاتف.
 - الأمثلة في الصور تخيلية.
 
 <p>
@@ -55,8 +55,8 @@ Works on Android 7.0 and later. Package name: `com.mahmoud.basma`. Current versi
 
 ### Good to know
 - Logos are built from templates inside the app, not by AI.
-- Everything runs on your device. No account, no ads, no data sent anywhere.
-- Up to 12 designs can be saved on your device.
+- Designing and saving happen on your device. No account, no ads.
+- Saved designs (up to 12) are stored on your device. Android's backup feature may include the app's data in your phone backup. Turn that off in your phone settings if you don't want it.
 - The example logos in the screenshots are fictional.
 
 ### Verify the download
