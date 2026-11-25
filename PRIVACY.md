@@ -44,3 +44,19 @@ Contact: open an issue at https://github.com/basma-app/basma/issues (public; do 
 **التغييرات.** لو السياسة اتغيرت، النسخة الجديدة هتحل محل الصفحة دي بتاريخ جديد.
 
 **التواصل.** افتح Issue على https://github.com/basma-app/basma/issues. الـIssues على GitHub علنية، فمتكتبش فيها بيانات شخصية أو حساسة.
+
+## Ratings and comments on the landing page
+
+This section is about the landing page only. The Android app itself still does not send anything to us.
+
+Visitors can leave stars and a comment on https://basma-app.github.io/basma/ without an account.
+
+What is stored: the number of stars, the comment, the optional name you type, and the time. Reviews are checked by the project owner before they appear, and approved ones are shown publicly with your name if you typed one. Do not write personal details in the comment.
+
+What is processed but not stored in readable form: your connection data (IP address). It is used by the Cloudflare captcha (Turnstile) to check you are not a bot, and it is turned into a one-way daily hash to limit each visitor to 3 submissions a day. The raw IP address is not saved in the reviews database.
+
+Where: reviews live in a free Cloudflare account (Workers and D1 database) owned by the project. Cloudflare processes connection data as the hosting and captcha provider.
+
+Limits: there is no login, so ratings are not proven to come from different people. Spam is reduced, not eliminated.
+
+Remove a review: open an issue at https://github.com/basma-app/basma/issues with the comment text and it will be deleted.
