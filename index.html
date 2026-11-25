@@ -44,5 +44,35 @@ h1{font-size:2.2rem;color:#e6c26a;margin:.2em 0}h2{color:#e6c26a;margin-top:1.6e
 <ul><li>80+ symbols, 12 Arabic and Latin fonts</li><li>11 layouts and 5 styles including metallic gold</li><li>Templates, palettes and custom colors</li><li>Move, resize and rotate each element, with undo and redo</li><li>Export PNG (white or transparent) or SVG</li></ul>
 <p>Android 7.0 or later. Logos are built from in-app templates, not by AI. No account, no ads. Not from the Play Store, so Play Protect may warn about an unknown developer.</p>
 <p>APK SHA-256: <code>619dc268c2cb9b0beb1f42750cc32868d2c337b9181d3c0d04973b09cdf64ed7</code></p></section>
+<section id="reviews" dir="rtl">
+<h2>قيّم بصمة / Rate Basma</h2>
+<p>جرّبت التطبيق؟ اختار عدد النجوم واكتب رأيك من غير تسجيل. التقييمات بتظهر بعد مراجعتها. بنحفظ النجوم والتعليق والاسم اللي تكتبه (اختياري) وبيظهروا علنًا. التقييمات مش بالضرورة من أشخاص مختلفين.</p>
+<p dir="ltr" style="text-align:left">Tried the app? Pick your stars and leave a comment, no sign-up. Reviews appear after they are checked. We store your stars, comment and the optional name you type, and they are shown publicly. Ratings are not verified as coming from different people.</p>
+<div id="summary" class="sum">...</div>
+<form id="rf"><div class="stars" id="stars" role="radiogroup" aria-label="Stars">
+<button type="button" data-s="1">★</button><button type="button" data-s="2">★</button><button type="button" data-s="3">★</button><button type="button" data-s="4">★</button><button type="button" data-s="5">★</button></div>
+<input id="rn" maxlength="40" placeholder="الاسم (اختياري) / Name (optional)">
+<textarea id="rc" maxlength="500" rows="3" placeholder="رأيك / Your comment"></textarea>
+<div class="cf-turnstile" data-sitekey="0x4AAAAAAGTJyBlVAf0fwXPw"></div>
+<button class="btn" type="submit">إرسال / Submit</button><div id="msg" role="status"></div></form>
+<div id="list"></div>
+<p class="sm">تفاصيل الخصوصية / Privacy: <a href="https://github.com/basma-app/basma/blob/main/PRIVACY.md">PRIVACY.md</a></p>
+</section>
+<style>#reviews input,#reviews textarea{width:100%;box-sizing:border-box;margin:6px 0;padding:10px;border-radius:8px;border:1px solid #6b5a2e;background:#1e1a12;color:#f3ead7;font:inherit}.stars button{background:none;border:0;font-size:2rem;color:#5a4d2a;cursor:pointer}.stars button.on{color:#e6c26a}.rv{border-top:1px solid #3a3220;padding:8px 0}.sm{font-size:.85em;opacity:.8}.sum{font-weight:700;color:#e6c26a}</style>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+<script>
+const API="https://basma-reviews-api.mahmoudalkafas84.workers.dev";let stars=0;
+const $=i=>document.getElementById(i);
+function esc(t){const d=document.createElement('div');d.textContent=t;return d.innerHTML}
+async function load(){try{const r=await (await fetch(API+'/reviews')).json();$('summary').textContent=r.count?('★ '+r.average+' / 5 · '+r.count+' تقييم / ratings'):'لسه مفيش تقييمات / No reviews yet';$('list').innerHTML=r.reviews.map(v=>'<div class="rv"><b>'+'★'.repeat(v.stars)+'</b> '+esc(v.name||'زائر / Visitor')+'<br>'+esc(v.comment)+'</div>').join('')}catch(e){$('summary').textContent='التقييمات مش متاحة حاليًا / Reviews are unavailable right now'}}
+$('stars').onclick=e=>{const s=e.target.dataset.s;if(!s)return;stars=+s;[...$('stars').children].forEach((b,i)=>b.classList.toggle('on',i<stars))};
+$('rf').onsubmit=async e=>{e.preventDefault();if(!stars){$('msg').textContent='اختار النجوم / Pick stars';return}
+const token=document.querySelector('[name=cf-turnstile-response]')?.value;
+const r=await fetch(API+'/reviews',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({stars,name:$('rn').value,comment:$('rc').value,token})});
+const j=await r.json().catch(()=>({}));
+$('msg').textContent=r.ok?'شكرًا! هيظهر بعد المراجعة / Thanks! It will appear after review':(j.error=='rate_limit'?'وصلت للحد اليومي / Daily limit reached':'مقدرناش نبعت. جرّب تاني / Could not send, try again');
+if(r.ok){$('rf').reset();stars=0;[...$('stars').children].forEach(b=>b.classList.remove('on'));window.turnstile&&turnstile.reset()}};
+load();
+</script>
 <footer><a href="https://github.com/basma-app/basma">GitHub</a> · <a href="https://basma-app.itch.io/basma">itch.io</a> · <a href="https://github.com/basma-app/basma/blob/main/PRIVACY.md">سياسة الخصوصية / Privacy</a></footer>
 </div></body></html>
