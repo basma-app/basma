@@ -4,6 +4,8 @@
 
 🌐 [صفحة التطبيق / App page](https://basma-app.github.io/basma/)
 
+⭐ [قيّم بصمة / Rate Basma](https://basma-app.github.io/basma/#reviews) · ![التحميلات / Downloads](https://img.shields.io/github/downloads/basma-app/basma/total?label=downloads)
+
 بصمة تطبيق أندرويد بسيط تصمّم بيه شعار لمشروعك في دقايق، من غير خبرة في التصميم.
 اكتب اسم النشاط (عربي أو English)، اختار الرمز والخط والألوان، والشعار يتغير قدامك على طول. حمّله PNG أو SVG.
 
