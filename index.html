@@ -23,6 +23,10 @@ h1{font-size:2.2rem;color:#e6c26a;margin:.2em 0}h2{color:#e6c26a;margin-top:1.6e
 <p class="dev"><strong>قيد التطوير / In development</strong> · الإصدار 1.5.3 · Version 1.5.3</p>
 <a class="btn o" href="https://github.com/basma-app/basma/releases/tag/v1.5.3">صفحة الإصدار</a></header>
 <div class="shots"><img src="docs/shot-01-start.png" alt="شاشة البداية في تطبيق بصمة"><img src="docs/shot-02-gold.png" alt="شعار ذهبي"><img src="docs/shot-03-letters.png" alt="شعار حروف"><img src="docs/shot-04-outline.png" alt="شعار بحدود"><img src="docs/shot-05-arabic.png" alt="شعار عربي"><img src="docs/shot-06-edit.png" alt="تعديل الشعار"></div>
+<section id="stats" class="stats" aria-live="polite"><div class="sn" id="dl">...</div><div class="sl">تنزيلات ملف الـAPK</div><p class="sm">عدّاد تنزيلات GitHub للإصدار 1.5.3. بيعدّ مرات التنزيل مش عدد الأشخاص، وممكن يشمل تنزيلاتنا إحنا. التطبيق مش بيبعت أي بيانات، فمفيش طريق نعرف عدد اللي مسحوه.</p><div dir="ltr" lang="en"><div class="sl">APK downloads</div><p class="sm">GitHub download counter for v1.5.3. It counts downloads, not people, and may include our own. The app sends no data, so uninstalls cannot be known.</p></div></section>
+<style>.stats{margin:18px 0;padding:16px;border:1px solid #e6c26a;border-radius:14px;background:#1e1a12;text-align:center}.stats .sn{font-size:2.4rem;font-weight:800;color:#e6c26a;line-height:1.2}.stats .sl{font-weight:700}.stats .sm{font-size:.8em;opacity:.8;margin:8px 0 0}</style>
+<script>fetch('https://api.github.com/repos/basma-app/basma/releases').then(r=>r.json()).then(a=>{let n=0;a.forEach(x=>x.assets.forEach(s=>{if(/\.apk$/.test(s.name))n+=s.download_count}));document.getElementById('dl').textContent=n.toLocaleString('en')}).catch(()=>{document.getElementById('stats').style.display='none'})</script>
+
 <h2>المميزات</h2><ul>
 <li>أكتر من 80 رمز، و12 خط عربي وإنجليزي (منهم مخطوطة وكوفي)</li>
 <li>11 تخطيط و5 أساليب (عادي، بحدود، مرسوم باليد، ظل، وذهبي معدني)</li>
