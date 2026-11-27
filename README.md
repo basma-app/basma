@@ -9,10 +9,17 @@
 بصمة تطبيق أندرويد بسيط تصمّم بيه شعار لمشروعك في دقايق، من غير خبرة في التصميم.
 اكتب اسم النشاط (عربي أو English)، اختار الرمز والخط والألوان، والشعار يتغير قدامك على طول. حمّله PNG أو SVG.
 
+### جديد في 1.6
+- 105 قالب جاهز لمجالات كتير (مطاعم وكافيهات، صيدليات وعيادات، موبايلات، جيم، مدارس، ورش، ملابس ومجوهرات، كوافير وغيرها)
+- 100 رمز (زودنا 11 رمز جديد) و5 خطوط عربي جديدة
+- اسحب الشاشة لتحت عشان تبدأ لوجو جديد (بيسألك الأول، وتقدر ترجّع بزر «تراجع»)
+- اضغط مطولًا على اللوجو أو أي رمز عشان يظهر اسمه
+- إشعار داخل التطبيق لما يتوفر تحديث، وفي الإعدادات لينك صفحة التطبيق
+
 ### المميزات
-- أكتر من 80 رمز، و12 خط عربي وإنجليزي (منهم خط مخطوطة وكوفي)
+- 100 رمز، و17 خط عربي وإنجليزي (منهم خط مخطوطة وكوفي)
 - 11 تخطيط و5 أساليب (عادي، بحدود، مرسوم باليد، ظل، وذهبي معدني)
-- قوالب وألوان جاهزة وألوانك انت
+- 105 قالب جاهز وألوان جاهزة وألوانك انت
 - حرّك الرمز والاسم والشعار اللفظي كل واحد لوحده، مع تراجع وإعادة
 - معاينة على كارت ولوحة داكنة وأيقونة تطبيق
 - تنزيل PNG بخلفية بيضاء أو شفافة، أو SVG للطباعة
@@ -22,7 +29,7 @@
 2. لما أندرويد يسأل، اسمح بالتثبيت من المصدر ده، وافتح الملف.
 3. ممكن Google Play Protect يحذّر من مطوّر غير معروف، لأن التطبيق مش من متجر Play.
 
-يشتغل على أندرويد 7.0 أو أحدث. اسم الحزمة: `com.mahmoud.basma`. الإصدار الحالي 1.5.3 (قيد التطوير).
+يشتغل على أندرويد 7.0 أو أحدث. اسم الحزمة: `com.mahmoud.basma`. الإصدار الحالي 1.6.0 (قيد التطوير).
 
 ### ملاحظات
 - الشعارات بتتعمل من قوالب جاهزة جوّه التطبيق، مش بالذكاء الاصطناعي.
@@ -42,10 +49,16 @@
 Basma is a simple Android app for making a logo for your business in minutes, with no design experience.
 Type your business name (Arabic or English), pick a symbol, font and colors, and watch the logo change as you go. Export PNG or SVG.
 
+### What's new in 1.6
+- 105 templates, 100 symbols (11 new), 5 new Arabic fonts
+- Pull down to start a new logo (asks first, undo restores)
+- Long-press the logo or any symbol to see its name
+- In-app update notice, and Settings links to the app page
+
 ### Features
-- 80+ symbols and 12 Arabic and Latin fonts, including calligraphy and Kufi
+- 100 symbols and 17 Arabic and Latin fonts, including calligraphy and Kufi
 - 11 layouts and 5 styles (solid, outline, hand-drawn, shadow, metallic gold)
-- Ready-made templates and color palettes, or your own colors
+- 105 ready-made templates and color palettes, or your own colors
 - Move, resize and rotate the symbol, name and tagline separately, with undo and redo
 - Mockup previews: business card, dark sign, app icon
 - Export PNG (white or transparent background) or SVG for print
@@ -55,7 +68,7 @@ Type your business name (Arabic or English), pick a symbol, font and colors, and
 2. When Android asks, allow installs from this source, then open the file.
 3. Google Play Protect may warn about an unknown developer, because the app is not from the Play Store.
 
-Works on Android 7.0 and later. Package name: `com.mahmoud.basma`. Current version 1.5.3 (in development).
+Works on Android 7.0 and later. Package name: `com.mahmoud.basma`. Current version 1.6.0 (in development).
 
 ### Good to know
 - Logos are built from templates inside the app, not by AI.
@@ -64,5 +77,5 @@ Works on Android 7.0 and later. Package name: `com.mahmoud.basma`. Current versi
 - The example logos in the screenshots are fictional.
 
 ### Verify the download
-SHA-256 of the APK: `619dc268c2cb9b0beb1f42750cc32868d2c337b9181d3c0d04973b09cdf64ed7`
+SHA-256 of the APK: `84e5ef39c5c738d78eabfa188d82f305cb9a590bf71a473463e0a98fadf7da91`
 Signing certificate SHA-256: `7771a3aef926425238aff65670db65c1eeb2e77bf197e2d516230254cdd5fb04`
