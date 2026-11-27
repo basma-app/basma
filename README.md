@@ -2,6 +2,8 @@
 
 **العربية** | [English](#english)
 
+**العربية** | [English](#english)
+
 🌐 [صفحة التطبيق / App page](https://basma-app.github.io/basma/)
 
 ⭐ [قيّم بصمة / Rate Basma](https://basma-app.github.io/basma/#reviews) · ![التحميلات / Downloads](https://img.shields.io/github/downloads/basma-app/basma/total?label=downloads)
