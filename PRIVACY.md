@@ -1,5 +1,6 @@
 # Basma | بصمة: Privacy Policy
 
+
 Last updated: November 25, 2026  
 App: Basma | بصمة (Android package com.mahmoud.basma), version 1.5.3  
 Developer: basma-app  
@@ -58,3 +59,9 @@ Where: reviews live in a free Cloudflare account (Workers and D1 database) owned
 Limits: there is no login, so ratings are not proven to come from different people. Spam is reduced, not eliminated.
 
 Remove a review: open an issue at https://github.com/basma-app/basma/issues with the comment text and it will be deleted.
+
+## Update check (version 1.6.0 and later)
+
+**English.** When you open the app and your phone is online, Basma 1.6.0 makes one request to https://basma-app.github.io/basma/version.json to see whether a newer version exists. That file is a tiny public text file with the latest version number, hosted on GitHub Pages. If the number is higher than your installed version, the app shows a dismissible notice with a link to the Basma page. The app sends no designs, no logo text and no personal data in this request, and it adds no account, device ID or advertising ID. The request has a short random number in the web address so you always get the latest file, and it sets no cookies of its own. Like any web request, it exposes normal network metadata to the host: your IP address, the time, and technical headers such as the app's WebView user agent. GitHub, which hosts the page, may log these under its own privacy policy, and we do not receive or control those logs. The check has a 6 second limit. If you are offline or it fails, nothing happens and the app works as usual. Designing a logo, saving, and exporting PNG or SVG work fully offline. Opening the link in the notice or in Settings opens the Basma page in your browser, where the page's own section above applies. This addendum applies to version 1.6.0 and later; the "version 1.5.3" statements above describe that version. We checked the shipped 1.6.0 code for this request, but we have not captured the app's network traffic on a device, so the WebView caveat above still applies.
+
+**بالعربي.** لما تفتح بصمة 1.6.0 والموبايل متصل بالإنترنت، التطبيق بيبعت طلب واحد لـ https://basma-app.github.io/basma/version.json عشان يشوف في نسخة أحدث ولا لأ. الملف ده ملف نصي صغير وعلني فيه رقم آخر إصدار، واستضافته على GitHub Pages. لو الرقم أعلى من نسختك، التطبيق بيظهر إشعار تقدر تقفله وفيه لينك لصفحة بصمة. الطلب ده مبيبعتش تصاميمك ولا نص الشعار ولا أي بيانات شخصية، ومفيش حساب أو معرّف جهاز أو معرّف إعلانات. في عنوان الطلب رقم عشوائي قصير عشان دايمًا ييجي آخر نسخة من الملف، ومبيحطش كوكيز من عنده. وزي أي طلب إنترنت، بيوصل للموقع المضيف بيانات الشبكة العادية: عنوان الـIP والوقت وبيانات تقنية زي هوية متصفح الـWebView. GitHub هو المضيف وممكن يسجّلها حسب سياسته، ومبنستلمش السجلات دي ومش بنتحكم فيها. الفحص مهلته 6 ثواني. لو انت أوفلاين أو فشل، مفيش حاجة بتحصل والتطبيق بيشتغل عادي. تصميم الشعار والحفظ وتصدير PNG وSVG بيشتغلوا بدون إنترنت. فتح اللينك من الإشعار أو من الإعدادات بيفتح صفحة بصمة في المتصفح، وبيسري عليها قسم الصفحة اللي تحت. الإضافة دي للإصدار 1.6.0 وما بعده، وكلام "الإصدار 1.5.3" فوق بيخص الإصدار ده. راجعنا كود 1.6.0 المتوزّع لهذا الطلب، لكن مسجّلناش حركة الشبكة على جهاز، فتحفّظ الـWebView فوق لسه سارٍ.
